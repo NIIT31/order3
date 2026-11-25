@@ -1,0 +1,15 @@
+<!-- 只保留这一个最外层view，把动画加在这里！ -->
+<view class="splash-container" animation="{{animationData}}">
+  <!-- 🔥 核心修改：把本地logo.png换成在线地址 -->
+  <image class="logo-img" src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAES8utp3JouPI8FjZnbY64hHENieD6vmgACDCcAAp3j6FaEu4gNotNcJTsE.png"></image>
+
+  <!-- 拆分创意文字 -->
+  <view class="title-box">
+    <text class="title-word word1">随</text>
+    <text class="title-word word2">意</text>
+    <text class="title-word word3">小</text>
+    <text class="title-word word4">吃</text>
+  </view>
+
+  <view class="desc">欢迎使用</view>
+</view>

@@ -1,0 +1,32 @@
+<view class="container">
+  <!-- 菜品大图 -->
+  <image src="{{food.img}}" class="detail-img"></image>
+
+  <!-- 菜品信息 -->
+  <view class="info">
+    <view class="name">{{food.name}}</view>
+    <view class="price">¥{{food.price}}</view>
+    <view class="desc">本店招牌小吃，味道超赞！</view>
+  </view>
+
+  <!-- 加入购物车按钮 -->
+  <button class="add-cart" bindtap="addCart">加入购物车</button>
+
+  ==============================================
+  👇 下面这段就是 **菜品推荐栏** 直接加好了
+  ==============================================
+  <view class="recommend-title">为你推荐</view>
+  <scroll-view class="recommend-scroll" scroll-x="true">
+    <view 
+      class="recommend-item" 
+      wx:for="{{recommendList}}" 
+      wx:key="id"
+      bindtap="goToDetail" 
+      data-id="{{item.id}}"
+    >
+      <image src="{{item.img}}" class="recommend-img"></image>
+      <view class="recommend-name">{{item.name}}</view>
+      <view class="recommend-price">¥{{item.price}}</view>
+    </view>
+  </scroll-view>
+</view>

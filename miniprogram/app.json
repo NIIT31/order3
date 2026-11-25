@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/order/order",
+    "pages/pay/pay",
+    "pages/user/user",
+    "pages/foodDetail",
+    "pages/foodDetail/foodDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6700",
+    "navigationBarTitleText": "随意小吃",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ff6700",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/images/cart.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "历史订单",
+        "iconPath": "/images/dingdan.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/user.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

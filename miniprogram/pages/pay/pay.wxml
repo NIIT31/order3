@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="pay-title">确认支付</view>
+
+  <view class="pay-card">
+    <view class="pay-item">
+      <text>订单金额</text>
+      <text class="price">¥{{totalPrice}}</text>
+    </view>
+
+    <view class="pay-item">
+      <text>支付方式</text>
+      <text>微信支付</text>
+    </view>
+  </view>
+
+  <view class="pay-btn-box">
+    <button class="pay-btn" bindtap="toPay">立即支付 ¥{{totalPrice}}</button>
+  </view>
+</view>

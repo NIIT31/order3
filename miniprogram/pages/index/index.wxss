@@ -1,0 +1,115 @@
+/* 页面全局 */
+page {
+  background: #f8f8f8;
+  padding: 0;
+}
+.container {
+  padding-bottom: 40rpx;
+}
+
+/* ======================
+🔥 轮播推荐（右下角文字版）
+=======================*/
+.swiper-box {
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+.swiper {
+  width: 100%;
+  height: 400rpx !important;
+}
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* 图片完全铺满容器 */
+.swiper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* 🔥 核心修改：文字放在右下角 */
+.swiper-name {
+  position: absolute;
+  bottom: 80rpx;  /* 距离底部80rpx */
+  right: 30rpx;   /* 距离右侧30rpx，右下角定位 */
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2rpx 4rpx rgba(0,0,0,0.5);
+  z-index: 10;
+}
+.swiper-price {
+  position: absolute;
+  bottom: 30rpx;  /* 价格在名字下方，距离底部30rpx */
+  right: 30rpx;   /* 同步右侧定位，和名字对齐 */
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6700;
+  padding: 8rpx 24rpx;
+  border-radius: 30rpx;
+  text-shadow: none;
+  z-index: 10;
+}
+
+/* ======================
+菜品列表原有样式（不变）
+=======================*/
+.page-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+  margin: 20rpx 0 30rpx 20rpx;
+}
+.food-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.06);
+  gap: 20rpx;
+  margin: 0 20rpx 20rpx;
+}
+.food-img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 12rpx;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.food-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rpx;
+}
+.food-name {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+}
+.food-price {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #ff6700;
+}
+.add-btn {
+  background-color: #ff6700 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 50rpx !important;
+  padding: 12rpx 32rpx !important;
+  font-size: 26rpx !important;
+  line-height: 1.2 !important;
+  flex-shrink: 0;
+}
+.add-btn::after {
+  border: none;
+}

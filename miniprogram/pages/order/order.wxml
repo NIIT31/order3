@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="title">历史订单</view>
+
+  <!-- 空订单提示 -->
+  <view wx:if="{{orderList.length === 0}}" class="empty">
+    暂无订单
+  </view>
+
+  <!-- 订单列表 -->
+  <view wx:else>
+    <view class="order-item" wx:for="{{orderList}}" wx:key="orderId">
+      <view class="order-header">
+        <text class="order-id">订单号：{{item.orderId}}</text>
+        <text class="order-time">{{item.time}}</text>
+      </view>
+
+      <view class="food-list">
+        <view class="food-item" wx:for="{{item.foods}}" wx:key="id">
+          {{item.name}} × {{item.count}}  ¥{{item.price}}
+        </view>
+      </view>
+
+      <view class="order-total">
+        实付：¥{{item.totalPrice}}
+      </view>
+    </view>
+  </view>
+</view>

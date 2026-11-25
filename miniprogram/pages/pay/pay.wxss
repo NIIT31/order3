@@ -1,0 +1,37 @@
+.container{
+  padding: 40rpx;
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+.pay-title{
+  font-size: 44rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+.pay-card{
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+.pay-item{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.price{
+  color: #ff6700;
+  font-weight: bold;
+}
+.pay-btn-box{
+  margin-top: 60rpx;
+}
+.pay-btn{
+  background: #ff6700;
+  color: #fff;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  padding: 20rpx;
+}

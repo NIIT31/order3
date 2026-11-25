@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="user-box" bindtap="toLogin">
+    <image class="avatar" src="{{userInfo.avatarUrl || '/images/tab/user.png'}}"></image>
+    <view class="nickname">{{userInfo.nickName || '点击微信授权登录'}}</view>
+  </view>
+
+  <view class="menu">
+    <view class="item" bindtap="goToOrders">
+      <text>我的订单</text>
+      <text>></text>
+    </view>
+    <view class="item" bindtap="logout" wx:if="{{isLogin}}">
+      <text>退出登录</text>
+      <text>></text>
+    </view>
+  </view>
+</view>

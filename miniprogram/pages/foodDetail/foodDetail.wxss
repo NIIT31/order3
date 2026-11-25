@@ -1,0 +1,55 @@
+.detail-img{
+  width:100%;
+  height:400rpx;
+}
+.info{
+  padding:20rpx;
+}
+.name{
+  font-size:38rpx;
+  font-weight:bold;
+}
+.price{
+  color:red;
+  font-size:32rpx;
+  margin-top:10rpx;
+}
+.desc{
+  margin-top:10rpx;
+  color:#666;
+}
+.add-cart{
+  background:#ff6700;
+  color:#fff;
+  margin:30rpx;
+}
+
+/* 推荐样式 */
+.recommend-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin: 40rpx 0 20rpx;
+  padding-left: 20rpx;
+}
+.recommend-scroll {
+  white-space: nowrap;
+  padding-left: 20rpx;
+}
+.recommend-item {
+  display: inline-block;
+  width: 220rpx;
+  margin-right: 20rpx;
+}
+.recommend-img {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 10rpx;
+}
+.recommend-name {
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.recommend-price {
+  color: red;
+  font-size: 24rpx;
+}

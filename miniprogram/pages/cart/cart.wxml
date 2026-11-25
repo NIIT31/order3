@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="page-title">购物车</view>
+
+  <view wx:if="{{cartList.length === 0}}" class="empty">
+    购物车还是空的哦~
+  </view>
+
+  <view wx:else>
+    <view class="cart-item" wx:for="{{cartList}}" wx:key="id">
+      <!-- 菜品图片（和首页图片共用，无需额外添加） -->
+      <image src="{{item.img}}" mode="aspectFill"></image>
+      
+      <view class="food-info">
+        <view class="food-name">{{item.name}}</view>
+        <view class="food-price">¥{{item.price}}</view>
+      </view>
+
+      <view class="count-box">
+        <view bindtap="reduceCount" data-id="{{item.id}}" class="count-btn">-</view>
+        <view class="count-num">{{item.count}}</view>
+        <view bindtap="addCount" data-id="{{item.id}}" class="count-btn">+</view>
+      </view>
+    </view>
+
+    <view class="total-bar">
+      <view class="total-text">总计：</view>
+      <view class="total-price">¥{{totalPrice}}</view>
+    </view>
+
+    <view class="btn-group">
+      <button bindtap="clearCart" class="clear-btn">清空</button>
+      <button bindtap="checkout" class="checkout-btn">结算</button>
+    </view>
+  </view>
+</view>
